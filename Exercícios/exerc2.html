@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Exercício JavaScript</title>
+    <script type="text/javascript">
+     
+        function inverter(){
+            var inverter = document.getElementsByName("txt");
+            valor = inverter.item(0).value.toString().split("");
+            normal = valor.reverse().join("");
+            document.body.innerHTML += normal + "<br />";
+        }
+ 
+    </script>
+</head>
+<body>
+<h1>Inverter palavras</h1>
+<form>
+Digite a palavra:<input type="text" name="txt" value="" />
+<input type="button" id="btn" value="Inverter" onclick="inverter()" />
+</form>
+</body>
+</html>
